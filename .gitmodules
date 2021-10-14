@@ -1,0 +1,3 @@
+[submodule "myblog/themes/Blonde"]
+	path = myblog/themes/Blonde
+	url = https://github.com/opera7133/Blonde.git
