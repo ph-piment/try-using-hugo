@@ -1,124 +1,53 @@
-baseURL = "https://example.com"
-title = "Blonde"
-author = "wamo"
-languageCode = "en"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-theme = "Blonde"
-enableRobotsTXT = true
-
-# Please enable this feature if the site is available in Japanese, Chinese or Korean.
-#hasCJKLanguage = true
-
-# If you're using Google Analytics, you can enable this feature.
-#googleAnalytics = "G-1234567890"
-
-# Disqus Comment System
-#disqusShortname = ""
+baseurl      = "localhost"
+title        = "My Blog"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
 
 [params]
-# Base color of the website.
-# https://tailwindcss.com/docs/background-color
-base_color = "bg-gray-800"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
 
-#Site description
-description = "Blonde theme for Hugo."
+  # Subtitle for home
+  homeSubtitle = "A simple and beautiful blog"
 
-# The number of articles to be displayed on a single page.
-paginator_pages = "5"
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
 
-# Enable this if you want the archive list to be in a drop-down format.
-archive_dropdown = "false"
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
 
-# Number of tags to be displayed.
-tagsLimit = 20
-
-# Dark mode by default : dark
-# Light mode by default : light
-darkmode = "light"
-
-  [params.post]
-    # Show thumbnails
-    thumbnail = true
-
-    # Disable the "NO IMAGE" image.
-    noimage = true
-
-    # See the Tailwind CSS documentation to set it up.
-    # Recommended settings are h-32 to h-48.
-    # https://tailwindcss.com/docs/height
-    thumbnail_height = "h-44"
-
-    # https://tailwindcss.com/docs/width
-    thumbnail_width = "w-auto"
-
-    # Number of characters in description
-    description = "130"
-
-  [params.widgets]
-    # Display widgets
-    display = true
-
-    # Order of widgets to display
-    widgets = ["search", "archive", "category", "tags", "recent"]
-
-# If you're using Yandex.Metrica, you can enable this feature.
-#[params.analytics.yandexmetrica]
-#    enabled = true
-#    tagNumber = ''
-
-[menu]
-
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 2
-
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 3
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
 
 [taxonomies]
-category = "categories"
-tag = "tags"
-archive = "archives"
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
 
-[privacy]
+[languages]
+  [languages.en]
+    title = "Hello Friend NG"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
 
-  [privacy.vimeo]
-    disabled = false
-    simple = true
+    [languages.en.params.logo]
+      logoText = "hello friend ng"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
 
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true
-
-[build]
-  writeStats = true
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
 
