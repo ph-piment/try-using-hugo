@@ -1,17 +1,17 @@
-baseurl      = "localhost"
-title        = "My Blog"
+baseurl      = "/"
+title        = "Ph.piment's Outputs"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  dateform        = "Oct 16, 2021"
+  dateformShort   = "Oct 16"
+  dateformNum     = "2021-10-16"
+  dateformNumTime = "2021-10-16 15:04"
 
   # Subtitle for home
-  homeSubtitle = "A simple and beautiful blog"
+  homeSubtitle = "Can you do it? I can do it."
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -20,7 +20,7 @@ paginate     = 10
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
+  description = "My new outputs"
   keywords = "homepage, blog"
   images = [""]
 
@@ -31,14 +31,14 @@ paginate     = 10
 
 [languages]
   [languages.en]
-    title = "Hello Friend NG"
-    subtitle = "A simple theme for Hugo"
+    title = "Ph.piment's Outputs"
+    subtitle = "Can you do it? I can do it."
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "hello friend ng"
+      logoText = "Ph.piment's Outputs"
       logoHomeLink = "/"
     # or
     #
@@ -46,8 +46,8 @@ paginate     = 10
     # alt = "Your example logo alt text"
 
   # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+#  [[menu.main]]
+#    identifier = "blog"
+#    name       = "Blog"
+#    url        = "/posts"
 
